@@ -586,7 +586,7 @@ export function seasonal(
 ) {
   return MONTHS.map((label, i) => {
     const night = makeNight(year + "-" + String(i + 1).padStart(2, "0") + "-15", site);
-    const result = targetNight(o, night, minAlt, "Setups_AS", sector);
+    const result = targetNight(o, night, minAlt, "Setup_AS", sector);
     return { label, month: i, hours: result.hours, peak: result.peak };
   });
 }
