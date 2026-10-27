@@ -92,7 +92,7 @@ export const DEG = Math.PI / 180;
 // advertised field. The Odyssey's output size is unpublished; 2880 × 2160 is the
 // 4:3 crop of the IMX415 that reproduces Unistellar's 45′ × 33.6′.
 export const scopes = {
- Setup_AS: {
+  Setup_AS: {
     maker: "Sky-Watcher + ZWO",
     name: "80ED + 0.8x + ASI294MC",
     aperture: 80,

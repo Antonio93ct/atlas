@@ -9,7 +9,10 @@ export const metadata: Metadata = {
     "Messier and Caldwell atlas with a smart-telescope field-of-view simulator (Seestar, DWARF, Vespera, Unistellar, Origin), a nightly observing planner and a cloud forecast.",
   manifest: "/manifest.webmanifest",
   applicationName: "Antonio Astro Atlas",
-  authors: [{ name: "Antonio Scandurra" }, { name: "Salvatore La Malfa", role: "original project" }],
+  authors: [
+    { name: "Antonio Scandurra" },
+    { name: "Salvatore La Malfa", role: "original project" },
+  ],
   appleWebApp: {
     capable: true,
     title: "Antonio Astro Atlas",

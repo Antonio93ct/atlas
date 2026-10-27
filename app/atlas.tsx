@@ -583,7 +583,8 @@ export default function Atlas({
       </div>
       <footer className="atlas-footer">
         <span>
-          Antonio Astro Atlas · personalizzato da <b>Antonio Scandurra</b> · progetto originario di Salvatore La Malfa
+          Antonio Astro Atlas · personalizzato da <b>Antonio Scandurra</b> · progetto originario di
+          Salvatore La Malfa
         </span>
         <span>
           Version {appVersion} · built on {builtOn}
