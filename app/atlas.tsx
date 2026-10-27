@@ -70,10 +70,10 @@ export default function Atlas({
   const [sector, setSector] = useState<Sector>({ start: 0, span: 360 });
   const [day, setDay] = useState(initialDate),
     [dateOpen, setDateOpen] = useState(false),
-    [scoreWith, setScoreWith] = useState<ScopeId>("s50pro");
+    [scoreWith, setScoreWith] = useState<ScopeId>("Setup_AS");
   // The simulator compares several telescopes; each keeps its colour while it
   // stays selected, so removing one never recolours the others.
-  const [framed, setFramed] = useState<Framed[]>([{ id: "s50pro", color: FRAME_COLORS[0] }]);
+  const [framed, setFramed] = useState<Framed[]>([{ id: "Setup_AS", color: FRAME_COLORS[0] }]);
   // Derived, not synced: deselecting the scoring telescope hands the score to
   // the first one still selected.
   const scope = framed.some((x) => x.id === scoreWith) ? scoreWith : framed[0].id;
