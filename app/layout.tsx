@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   applicationName: "Antonio Astro Atlas",
   authors: [
     { name: "Antonio Scandurra" },
-    { name: "Salvatore La Malfa", role: "original project" },
+    { name: "Salvatore La Malfa" },
   ],
   appleWebApp: {
     capable: true,
