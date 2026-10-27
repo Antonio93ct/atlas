@@ -487,7 +487,7 @@ export function targetNight(
   o: DSO,
   n: Night,
   minAlt: number = 30,
-  scope: ScopeId = "s50pro",
+  scope: ScopeId = "Setup_AS",
   sector: Sector = { start: 0, span: 360 },
 ): TargetNight {
   // The night carries its own site, so the caller cannot pair a sky with the
@@ -586,7 +586,7 @@ export function seasonal(
 ) {
   return MONTHS.map((label, i) => {
     const night = makeNight(year + "-" + String(i + 1).padStart(2, "0") + "-15", site);
-    const result = targetNight(o, night, minAlt, "s50pro", sector);
+    const result = targetNight(o, night, minAlt, "Setups_AS", sector);
     return { label, month: i, hours: result.hours, peak: result.peak };
   });
 }
