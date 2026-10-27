@@ -4,15 +4,15 @@ import { RegisterServiceWorker } from "./register-sw";
 import { THEME_INIT } from "./theme-toggle";
 
 export const metadata: Metadata = {
-  title: "Deep Sky Atlas",
+  title: "Antonio Astro Atlas",
   description:
     "Messier and Caldwell atlas with a smart-telescope field-of-view simulator (Seestar, DWARF, Vespera, Unistellar, Origin), a nightly observing planner and a cloud forecast.",
   manifest: "/manifest.webmanifest",
-  applicationName: "Deep Sky Atlas",
-  authors: [{ name: "Salvatore La Malfa" }],
+  applicationName: "Antonio Astro Atlas",
+  authors: [{ name: "Antonio Scandurra" }, { name: "Salvatore La Malfa", role: "original project" }],
   appleWebApp: {
     capable: true,
-    title: "Deep Sky",
+    title: "Antonio Astro Atlas",
     // The atlas is dark throughout, so the iOS status bar should be too.
     statusBarStyle: "black-translucent",
   },
