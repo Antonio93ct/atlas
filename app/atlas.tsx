@@ -25,7 +25,6 @@ import {
   daysFrom,
   makeNight,
   nextDate,
-  MODENA,
   siteDate,
   siteKey,
   neverRises,
@@ -48,10 +47,19 @@ import { fetchClouds, fetchCloudRange, OUTLOOK_NIGHTS, type CloudForecast } from
 
 // Stable identity, so a render while loading is not a new prop every time.
 const CLOUDS_LOADING: CloudForecast = { state: "loading" };
+
+const SANTA_MARIA_DI_LICODIA: Site = {
+  id: "santa-maria-di-licodia",
+  name: "Santa Maria di Licodia",
+  latitude: 37.6167,
+  longitude: 14.893,
+  height: 442,
+  timeZone: "Europe/Rome",
+};
 export default function Atlas({
   initialDate,
   localMode = false,
-  initialSite = MODENA,
+  initialSite = SANTA_MARIA_DI_LICODIA,
 }: {
   initialDate: string;
   localMode?: boolean;
@@ -228,7 +236,7 @@ export default function Atlas({
             <Orbit />
           </span>
           <span>
-            Deep Sky <b>Atlas</b>
+            Antonio <b>Astro Atlas</b>
           </span>
         </a>
         <nav>
@@ -575,15 +583,15 @@ export default function Atlas({
       </div>
       <footer className="atlas-footer">
         <span>
-          Deep Sky Atlas · by <b>Salvatore La Malfa</b>
+          Antonio Astro Atlas · personalizzato da <b>Antonio Scandurra</b> · progetto originario di Salvatore La Malfa
         </span>
         <span>
           Version {appVersion} · built on {builtOn}
         </span>
         <span>
           Explore, frame, pick your night. ·{" "}
-          <a href="https://github.com/salvolm84/atlas" target="_blank" rel="noreferrer">
-            Source on GitHub ↗
+          <a href="https://github.com/Antonio93ct/atlas" target="_blank" rel="noreferrer">
+            Il tuo sorgente su GitHub ↗
           </a>
         </span>
       </footer>
